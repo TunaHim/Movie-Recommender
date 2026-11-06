@@ -18,3 +18,15 @@ nmf_MovieModel.pkl is the NMF model; mean_movies.pkl mean of the movie rating by
 + 'app.py' file: Run this python file in a terminal which will generates a http address. Open the http address in a web browser.
 + 'recommender.py' file: Contains various recommendation implementations of all three algorithms and returns a list of recommended movies.
 + 'util.py' file: Contains supporting functions.
+
+## Data sources and access
+
+| Data | Source | Format |
+|---|---|---|
+| MovieLens "ml-latest-small" (movies and ratings) | GroupLens Research, https://grouplens.org/datasets/movielens/ | CSV files in `WebApp/data/` |
+
+Derived files (`ratmov.csv`, the NMF model and mean ratings) are written by `EDA.ipynb` to `savedFiles/`. The MovieLens data remain under the GroupLens terms of use.
+
+## Licence
+
+Code: MIT, see [LICENSE](LICENSE). Data: see *Data sources and access*; third-party data keep their own terms.
